@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+  <link href="css.css" rel="stylesheet">
+</head>
+<body>
+  <img class="pattern-circle" src='./images/pattern-circles.svg'>
+  <main>
+    <header>Simple, traffic-based pricing</header>
+    <div class="subheader">
+      <div>Sign-up for our 30-day trial. No credit card required.</div>
+    </div>
+    <section class='card'>
+      <div class="price-row">
+        <div class="pageview-text">100K PAGEVIEWS</div>
+        <input type="range" value="2" min="0" max="4" id='slider'/>
+      </div>
+      <div class="price-box">
+        <span class="price-number">
+          $<span id="slideroutput">16.00</span>
+        </span>
+        <span>/month</span>
+      </div>
+
+      <div class="mny">
+        <div>Monthly Billing</div>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
+          <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+        <div>Yearly Billing</div>
+        <div class="discount">25% discount</div>
+      </div>
+      <hr/>
+
+      <div class="cardbottomrow">
+        <div class="remark">
+          <img src='./images/icon-check.svg'>
+          Unlimited websites
+          <br/>
+          <img src='./images/icon-check.svg'>
+          100% data ownership
+          <br/>
+          <img src='./images/icon-check.svg'>
+          Email reports
+        </div>
+        <button>Start my trial</button>
+      </div>
+    </section>
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Jia-Jing, Li</a>.
+    </div> -->
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
